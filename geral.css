@@ -91,11 +91,12 @@
 
     .nav-btn {
       position: absolute;
-      top: 50%;
+      top: 90%;
+      outline:#222;
       transform: translateY(-50%);
       background: rgba(255, 255, 255, 0.2);
       border: none;
-      color: #fff;
+      color: #000;
       font-size: 28px;
       padding: 12px 16px;
       border-radius: 50%;
@@ -113,11 +114,12 @@
     }
 
     .dots {
+    
       position: absolute;
       bottom: 24px;
       left: 50%;
       transform: translateX(-50%);
-      display: flex;
+      display: none;
       gap: 8px;
       z-index: 10;
     }
@@ -126,6 +128,7 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
+      color:#000;
       background: rgba(255, 255, 255, 0.4);
       transition: background 0.3s;
     }

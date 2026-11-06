@@ -1,49 +1,53 @@
 .countdown-wrap {
-  position:absolute;
-  top:20px;
-  left:80px;
+  position: absolute;
+  top: clamp(12px, 4vh, 20px);
+  left: 50%;
+  transform: translateX(calc(-50% + 4px));
   background: transparent;
   border-radius: 16px;
-  padding: 32px 24px;
+  padding: 24px 16px;
   text-align: center;
   width: 100%;
-  max-width: 360px;
-}
+  max-width: 300px;
+}   
 .countdown-title {
   font-family: Georgia, 'Times New Roman', serif;
   color: #3d2b1f;
-  font-size: 20px;
+  font-size: clamp(16px, 4vw, 20px);
   margin-bottom: 16px;
 }
 .countdown-grid {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
+  flex-wrap: nowrap;
 }
 .cd-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 0;
+  flex: 1;
 }
 .cd-num {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 42px;
+  font-size: clamp(24px, 8vw, 42px);
   font-weight: bold;
   color: #3d2b1f;
 }
 .cd-label {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 11px;
+  font-size: clamp(8px, 2.5vw, 11px);
   color: #3d2b1f;
   letter-spacing: 1px;
   margin-top: 4px;
 }
 .cd-sep {
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 36px;
+  font-size: clamp(20px, 7vw, 36px);
   color: #3d2b1f;
-  padding: 0 2px;
+  padding: 0 1px;
   align-self: flex-start;
   margin-top: 4px;
 }   
