@@ -1,6 +1,6 @@
 .countdown-wrap {
   position: absolute;
-  top: clamp(12px, 4vh, 20px);
+  top: clamp(4px, 4vh, 20px);
   left: 50%;
   transform: translateX(calc(-50% + 4px));
   background: transparent;
