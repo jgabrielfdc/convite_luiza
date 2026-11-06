@@ -1,11 +1,11 @@
 .countdown-wrap {
   position: absolute;
-  top: clamp(4px, 4vh, 20px);
+  top: clamp(2px, 2vh, 12px);
   left: 50%;
   transform: translateX(calc(-50% + 4px));
   background: transparent;
   border-radius: 16px;
-  padding: 24px 16px;
+  padding: clamp(12px, 3vh, 24px) clamp(12px, 3vw, 16px);
   text-align: center;
   width: 100%;
   max-width: 300px;
