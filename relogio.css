@@ -7,9 +7,9 @@
   border-radius: 16px;
   padding: clamp(12px, 3vh, 24px) clamp(12px, 3vw, 16px);
   text-align: center;
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 300px;
-}   
+}    
 .countdown-title {
   font-family: Georgia, 'Times New Roman', serif;
   color: #3d2b1f;

@@ -136,7 +136,7 @@ body {
 #btn_site_noivos {
   background-color: transparent;
   position: absolute;
-  top: clamp(180px, 28vh, 242px);
+  top: clamp(165px, 28vh, 242px);
   left: 50%;
   transform: translateX(-50%);
   width: clamp(200px, 70%, 320px);
