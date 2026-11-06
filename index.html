@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="relogio.css" rel="stylesheet">
+  <link href="geral.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="stage">
+    <div id="video-wrap">
+      <video id="vid" src="artes/convite_correcao.mp4" muted playsinline></video>
+      <div id="play-btn"></div>
+    </div>
+
+    <div class="arte" id="arte1" style="background-image: url('artes/pagina_2.png')">
+      <button class="nav-btn next" onclick="irPara(2)">→</button>
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <div class="arte" id="arte2" style="background-image: url('artes/pagina_3.png')">
+      <div class="countdown-wrap">
+        <p class="countdown-title"></p>
+        <div class="countdown-grid">
+          <div class="cd-item">
+            <span class="cd-num" id="cd-dias">--</span>
+            <span class="cd-label"></span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="cd-item">
+            <span class="cd-num" id="cd-horas">--</span>
+            <span class="cd-label"></span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="cd-item">
+            <span class="cd-num" id="cd-min">--</span>
+            <span class="cd-label"></span>
+          </div>
+          <span class="cd-sep">:</span>
+          <div class="cd-item">
+            <span class="cd-num" id="cd-seg">--</span>
+            <span class="cd-label"></span>
+          </div>
+        </div>
+      </div>   
+      <a href="https://noivos.casar.com/luiza-e-lucas-28-11-2026" id="btn_site_noivos" target="_blank"></a>
+      <button class="nav-btn prev" onclick="irPara(1)">←</button>
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot active"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="paginacao.js">
+  </script>
+  <script src="relogio.js"></script>
+</body>
+
+</html>

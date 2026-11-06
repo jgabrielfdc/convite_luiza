@@ -1,0 +1,49 @@
+.countdown-wrap {
+  position:absolute;
+  top:20px;
+  left:80px;
+  background: transparent;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+}
+.countdown-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #3d2b1f;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.countdown-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.cd-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cd-num {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: #3d2b1f;
+}
+.cd-label {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 11px;
+  color: #3d2b1f;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+.cd-sep {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 36px;
+  color: #3d2b1f;
+  padding: 0 2px;
+  align-self: flex-start;
+  margin-top: 4px;
+}   
