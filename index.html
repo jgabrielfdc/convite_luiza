@@ -1,76 +1,156 @@
-<!DOCTYPE html>
-<html>
 
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Nosso Convite de Casamento ❤️</title>
 
-<meta property="og:title" content="Nosso Convite de Casamento ❤️">
-<meta property="og:description" content="Preparamos esse site com muito carinho para compartilhar este momento especial com você. Confirme sua presença!">
-<meta property="og:image" content="https://convitecasamento-two.vercel.app/artes/capa.jpeg">
-<meta property="og:url" content="https://convitecasamento-two.vercel.app/">
+  <!-- Open Graph - WhatsApp, Facebook e outros -->
+  <meta property="og:type" content="website">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Nosso Convite de Casamento ❤️">
-<meta name="twitter:description" content="Preparamos esse site com muito carinho para compartilhar este momento especial com você.">
-<meta name="twitter:image" content="https://convitecasamento-two.vercel.app/artes/capa.jpeg">
+  <meta property="og:site_name" content="Nosso Convite de Casamento">
+
+  <meta property="og:url"
+    content="https://convitecasamento-two.vercel.app/">
+
+  <meta property="og:title"
+    content="Nosso Convite de Casamento ❤️">
+
+  <meta property="og:description"
+    content="Preparamos esse site com muito carinho para compartilhar este momento especial com você. Confirme sua presença!">
+
+  <meta property="og:image"
+    content="https://convitecasamento-two.vercel.app/artes/capa.jpeg">
+
+  <meta property="og:image:secure_url"
+    content="https://convitecasamento-two.vercel.app/artes/capa.jpeg">
+
+  <meta property="og:image:type" content="image/jpeg">
+
+  <meta property="og:image:width" content="1200">
+
+  <meta property="og:image:height" content="630">
+
+  <meta property="og:image:alt"
+    content="Convite de casamento da Luiza e do Lucas">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="twitter:title"
+    content="Nosso Convite de Casamento ❤️">
+
+  <meta name="twitter:description"
+    content="Preparamos esse site com muito carinho para compartilhar este momento especial com você.">
+
+  <meta name="twitter:image"
+    content="https://convitecasamento-two.vercel.app/artes/capa.jpeg">
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Nosso convite de casamento! Luiza e Lucas esperam você para compartilhar esse momento especial.">
+
+  <meta name="robots" content="index, follow">
+
+  <!-- CSS -->
   <link href="relogio.css" rel="stylesheet">
   <link href="geral.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <audio id="bgm" src="artes/musica.mp3" loop></audio>   
+
+  <audio id="bgm" src="artes/musica.mp3" loop></audio>
+
   <div id="stage">
+
     <div id="video-wrap">
-      <video id="vid" src="artes/convite_correcao.mp4" playsinline></video>
+
+      <video id="vid"
+        src="artes/convite_correcao.mp4"
+        playsinline>
+      </video>
+
       <div id="play-btn"></div>
+
     </div>
 
-    <div class="arte" id="arte1" style="background-image: url('artes/pagina_2.png')">
-      <button class="nav-btn next" onclick="irPara(2)">→</button>
+    <div class="arte" id="arte1"
+      style="background-image: url('artes/pagina_2.png')">
+
+      <button class="nav-btn next"
+        onclick="irPara(2)">→</button>
+
       <div class="dots">
         <div class="dot active"></div>
         <div class="dot"></div>
       </div>
+
     </div>
 
-    <div class="arte" id="arte2" style="background-image: url('artes/pagina_3.png')">
+    <div class="arte" id="arte2"
+      style="background-image: url('artes/pagina_3.png')">
+
       <div class="countdown-wrap">
+
         <p class="countdown-title"></p>
+
         <div class="countdown-grid">
+
           <div class="cd-item">
             <span class="cd-num" id="cd-dias">--</span>
             <span class="cd-label"></span>
           </div>
+
           <span class="cd-sep">:</span>
+
           <div class="cd-item">
             <span class="cd-num" id="cd-horas">--</span>
             <span class="cd-label"></span>
           </div>
+
           <span class="cd-sep">:</span>
+
           <div class="cd-item">
             <span class="cd-num" id="cd-min">--</span>
             <span class="cd-label"></span>
           </div>
+
           <span class="cd-sep">:</span>
+
           <div class="cd-item">
             <span class="cd-num" id="cd-seg">--</span>
             <span class="cd-label"></span>
           </div>
+
         </div>
-      </div>   
-      <a href="https://noivos.casar.com/luiza-e-lucas-28-11-2026" id="btn_site_noivos" target="_blank"></a>
-      <button class="nav-btn prev" onclick="irPara(1)">←</button>
+      </div>
+
+      <a href="https://noivos.casar.com/luiza-e-lucas-28-11-2026"
+        id="btn_site_noivos"
+        target="_blank"
+        rel="noopener noreferrer">
+      </a>
+
+      <button class="nav-btn prev"
+        onclick="irPara(1)">←</button>
+
       <div class="dots">
         <div class="dot"></div>
         <div class="dot active"></div>
       </div>
+
     </div>
+
   </div>
 
-  <script src="paginacao.js">
-  </script>
+  <!-- Scripts -->
+  <script src="paginacao.js"></script>
   <script src="relogio.js"></script>
-</body>
 
+</body>
 </html>
